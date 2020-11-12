@@ -37,3 +37,19 @@ ul li.active:after {
   border-color: purple transparent transparent transparent;
   transform: translate(-50%);
 }
+ul li.on {
+  background: #fff;
+}
+ul li.on:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -7px;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border: 2px solid purple;
+  border-left: none;
+  border-top: none;
+  transform: translateX(-50%) rotate(45deg);
+}
