@@ -11,14 +11,29 @@
 
     <input type="button" value="Day" onclick="
         let target = document.querySelector('body');
+
         if(this.value === 'Day'){
             target.style.backgroundColor = '#000';
             target.style.color = '#fff';
             this.value = 'Night';
+
+            let aLink = document.querySelectorAll('a');
+            let i = 0;
+            while(i < aLink.length){
+                aLink[i].style.color = 'pink';
+                i = i + 1;
+            }
         } else {
             target.style.backgroundColor = '#fff';
             target.style.color = '#000';
             this.value = 'Day';
+
+            let aLink = document.querySelectorAll('a');
+            let i = 0;
+            while(i < aLink.length){
+                aLink[i].style.color = 'purple';
+                i = i + 1;
+            }
         }
     ">
     <hr>
@@ -31,6 +46,7 @@
 
     <h2>JavaScript</h2>
     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Tenetur repudiandae saepe non, unde suscipit ratione quis quae in tempora<br>itaque ex consequuntur assumenda provident.<br>Dolorum voluptatem facere facilis enim nesciunt.</span>
-    <script src="main.js"></script>
+    <hr>
+    <!-- <script src="main.js"></script> -->
 </body>
 </html>
