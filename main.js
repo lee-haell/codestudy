@@ -1,4 +1,4 @@
-/* 반복문 while, 조건문
+/* 반복문 while, 조건문 */
 document.write('<p>1</p>');
 
 let i = 0;
@@ -12,7 +12,7 @@ while(i < 3) {
 
 document.write('<p>4</p>');
 //2까지 반복출력되고 다음 코드 실행
-*/
+
 
 /* 반복문에 배열 활용 */
 let color = [ "red", "orange", "yellow", "green" ];
@@ -24,3 +24,59 @@ while(i < color.length){ //배열에 데이터가 추가 또는 삭제되어도 
     //color[i] ->> 변수의 배열 출력
     i = i + 1;
 }
+
+
+//js 제어문 Quiz2
+var coworkers = ['a', 'b', 'c', 'd'];
+var i = coworkers.length - 1;
+while(i >= 0) {
+    document.write(coworkers[i]);
+    i = i - 1;
+}
+//dcba 출력
+
+
+
+/* 함수 - 매개변수 & 인수 */ 
+//함수 : 입력 + 출력
+//매개변수 : Parameter
+//인수 : Argument
+
+function onePlusOne(){
+    document.write(1+1);
+    //항상 1+1만 출력됨
+}
+
+function leftRight(left, right){
+    document.write(left + right);
+    //left, right는 매개변수
+}
+leftRight(2, 3);
+leftRight(5, 7);
+//2, 3 그리고 5, 7은 인자 / 인자는 함수로 전달된다.
+
+
+/* 리턴 return */ 
+//적절한 값을 돌려주는 것
+function something(left, right){
+    return left + right;
+}
+
+document.write(something(2, 3));
+document.write('<div style="color:red">' +something(5, 7)+ '</div>');
+
+
+/* 객체 */
+//폴더, 디렉토리, 순서가 없는 배열
+//객체에 속한 함수는 메소드(객체:document, 함수:querySelector)
+//함수 기반 위에 존재하는 개념(서로 연관된 함수와 변수가 많아지면 정리)
+let countries = { //가족이라는 오브젝트
+    "asia" : "korea"
+};
+//오브젝트 출력 (둘 다 같은 의미)
+document.write("asia : " +countries.asia);
+document.write("asia : " +countries["asia"]);
+//오브젝트 추가 (둘 다 같은 의미)
+countries.europe = "england";
+countries["europe"] = "england";
+
