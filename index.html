@@ -3,14 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>삼각형 만들기 01</title>
+    <title>edwith_js_17 조건문의 활용</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <ul>
-        <li class="active"><button>메뉴 1</button></li>
-        <li><button>메뉴 2</button></li>
-        <li class="on"><button>메뉴 3</button></li>
-    </ul>  
+    <h1><a href="index.html">WEB</a></h1>
+
+    <!-- <input type="button" value="Night" onclick="
+        document.querySelector('body').style.backgroundColor = '#000';
+        document.querySelector('body').style.color = '#fff';
+    ">
+    <input type="button" value="Day" onclick="
+        document.querySelector('body').style.backgroundColor = '#fff';
+        document.querySelector('body').style.color = '#000';
+    "> -->
+
+    <input id="nightDay" type="button" value="Day" onclick="
+        if(document.querySelector('#nightDay').value === 'Day'){
+            document.querySelector('body').style.backgroundColor = '#000';
+            document.querySelector('body').style.color = '#fff';
+            document.querySelector('#nightDay').value = 'Night';
+        } else {
+            document.querySelector('body').style.backgroundColor = '#fff';
+            document.querySelector('body').style.color = '#000';
+            document.querySelector('#nightDay').value = 'Day';
+        }
+    ">
+
+    <hr>
+    <ol>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+    </ol>
+    <hr>
+
+    <h2>JavaScript</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Tenetur repudiandae saepe non, unde suscipit ratione quis quae in tempora<br>itaque ex consequuntur assumenda provident.<br>Dolorum voluptatem facere facilis enim nesciunt.</p>
 </body>
 </html>
