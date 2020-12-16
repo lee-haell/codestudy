@@ -3,30 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>edwith_js_17 조건문의 활용</title>
+    <title>edwith_자바스크립트의 시작</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1><a href="index.html">WEB</a></h1>
 
-    <!-- <input type="button" value="Night" onclick="
-        document.querySelector('body').style.backgroundColor = '#000';
-        document.querySelector('body').style.color = '#fff';
-    ">
     <input type="button" value="Day" onclick="
-        document.querySelector('body').style.backgroundColor = '#fff';
-        document.querySelector('body').style.color = '#000';
-    "> -->
-
-    <input id="nightDay" type="button" value="Day" onclick="
-        if(document.querySelector('#nightDay').value === 'Day'){
-            document.querySelector('body').style.backgroundColor = '#000';
-            document.querySelector('body').style.color = '#fff';
-            document.querySelector('#nightDay').value = 'Night';
+        let target = document.querySelector('body');
+        if(this.value === 'Day'){
+            target.style.backgroundColor = '#000';
+            target.style.color = '#fff';
+            this.value = 'Night';
         } else {
-            document.querySelector('body').style.backgroundColor = '#fff';
-            document.querySelector('body').style.color = '#000';
-            document.querySelector('#nightDay').value = 'Day';
+            target.style.backgroundColor = '#fff';
+            target.style.color = '#000';
+            this.value = 'Day';
         }
     ">
 
