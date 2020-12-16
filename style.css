@@ -4,52 +4,33 @@
   padding: 0;
   list-style: none;
   border: none;
-  background: #ccc;
+  text-decoration: none;
 }
-ul {
-  display: flex;
-  border: 2px solid purple;
+
+body {
+  margin: 50px 50px;
 }
-ul li {
-  flex: 1;
-  text-align: center;
-  position: relative;
+
+h1 {
+  margin-bottom: 20px;
 }
-ul li button {
-  width: 100%;
-  height: 40px;
-  background: none;
+
+input {
+  width: 60px;
+  height: 30px;
+  margin: 0 10px 20px 0;
 }
-ul li ~ li {
-  border-left: 2px solid purple;
+
+ol li {
+  margin-bottom: 10px;
+  font-weight: bold;
 }
-ul li.active button {
-  background: purple;
-  color: #fff;
+
+h2 {
+  margin-bottom: 10px;
 }
-ul li.active:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -20px;
-  border-width: 10px;
-  border-style: solid;
-  border-color: purple transparent transparent transparent;
-  transform: translate(-50%);
-}
-ul li.on {
-  background: #fff;
-}
-ul li.on:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -7px;
-  width: 10px;
-  height: 10px;
-  background: #fff;
-  border: 2px solid purple;
-  border-left: none;
-  border-top: none;
-  transform: translateX(-50%) rotate(45deg);
+
+hr {
+  border: 1px solid #222;
+  margin: 20px 0;
 }
