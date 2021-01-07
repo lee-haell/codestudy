@@ -70,7 +70,7 @@ document.write('<div style="color:red">' +something(5, 7)+ '</div>');
 //폴더, 디렉토리, 순서가 없는 배열
 //객체에 속한 함수는 메소드(객체:document, 함수:querySelector)
 //함수 기반 위에 존재하는 개념(서로 연관된 함수와 변수가 많아지면 정리)
-let countries = { //가족이라는 오브젝트
+let countries = { //국가라는 오브젝트 생성
     "asia" : "korea"
 };
 //오브젝트 출력 (둘 다 같은 의미)
@@ -80,3 +80,36 @@ document.write("asia : " +countries["asia"]);
 countries.europe = "england";
 countries["europe"] = "england";
 
+/* 오브젝트 순회 */
+for(let key in countries){
+    document.write(key+'<br>');
+}
+//for ~ in: 국가 오브젝트의 요소에 모두 접근하여 '순회'하는 것
+//for ~ key in: 국가 오브젝트의 모든 key값(변수)에 접근
+for(let key in countries){
+    document.write(countries[key]+'<br>');
+}
+//국가 오브젝트의 key값(변수)의 모든 데이터에 접근
+for(let key in countries){
+    document.write(key+': '+countries[key]+'<br>');
+}
+
+/* 오브젝트(프로퍼티와 메소드) */
+countries.showAll = function() { //오브젝트에 함수지정
+    for(let key in this){
+        document.write(key+': '+this[key]+'<br>');
+    }//this 사용이유는 추후에 변수가 변경될 수 있기 때문에!!!
+}
+countries.showAll();
+//오브젝트에 소속된 함수(showAll) = 메소드 //오브젝트의 변수(key) = 프로퍼티
+
+/* 예제문제 */
+//조건문을 사용한 '메소드' 출력
+countries.printProgrammer = function() {
+    for(let key in this){
+        if(key === 'asia'){
+            document.write(key + ':' + this[key]);
+        }
+    }
+}
+countries.printProgrammer();
