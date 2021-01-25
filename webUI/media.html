@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        /* css code here */
+        @media screen and (max-width: 767px){
+            body {
+                background-color: gold;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1024px){
+            body {
+                background-color: lightblue;
+            }
+        }
+        @media screen and (min-width: 1025px) {
+            body {
+                background-color: lightpink;
+            }
+        }
+        @media print {
+            a {
+                text-decoration: none;
+            }
+            a:after {
+                content: "("attr(href)")";
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>
+        W3C는 <a href="https://www.w3.org/TR/css3-mdiaqueries/">CSS3 미디어쿼리 문서</a>를 2012년 6월에 표준 권고안으로 제정하였습니다.
+    </p>
+    <p>
+        또한, 기존이 미디어쿼리 개선 작업을 진행 중이며, 2017년 9월에 <a href="https://www.w3.org/TR/mediaqueries-4/">미디어쿼리 레벨4</a>를 발표했습니다. 이 문서는 현재 유력 표준 권고안입니다.
+    </p>
+</body>
+</html>
