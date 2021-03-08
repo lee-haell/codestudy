@@ -1,0 +1,15 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#264863
