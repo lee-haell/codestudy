@@ -1,15 +1,44 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
+@charset "utf-8";
+
+body,
+ol {
+  margin: 0;
+  padding: 0;
 }
 
-ul, ol {
-    list-style: none;
+ol {
+  list-style: none;
 }
 
-a {
-    text-decoration: none;
+.wrap {
+  position: relative;
+  width: 1020px;
+  height: 650px;
+  margin: 0 auto;
+  background: url("/event/bigevent.png") no-repeat 0 0;
 }
 
-#264863
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0); /* 요소의 특정 부분만 노출. rect(직사각형) */
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.click_link {
+  position: absolute;
+  width: 130px;
+  height: 24px;
+  left: 103px;
+  bottom: 104px;
+}
+
+.click_join {
+  position: absolute;
+  width: 340px;
+  height: 70px;
+  left: 340px;
+  bottom: 8px;
+}
