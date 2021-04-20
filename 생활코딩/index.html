@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+</head>
+<body>
+    <ul class="first">
+        <li class="foo"> list item 1 </li>
+        <li> list item 2 </li>
+        <li class="bar"> list item 3 </li>
+    </ul>
+    <ul class="second">
+        <li class="foo"> list item 1 </li>
+        <li> list item 2 </li>
+        <li class="bar"> list item 3 </li>
+    </ul>
+
+    <script defer src="/lib/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+
+
+            $('ul.first').find('.foo').css('background-color', 'purple').end().find('.bar').css('background-color', 'pink');
+            // jQuery - chain 개념
+        
+        });
+    </script>
+</body>
+</html>
