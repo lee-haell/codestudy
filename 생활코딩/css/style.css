@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.clear {
+  clear: both;
+}
+
+.page-main {
+  position: relative;
+}
+
+.page-main aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 100%;
+  background: #ccc;
+  border: 1px solid red;
+}
+
+.page-main aside .first {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+/* 생활코딩(youTube) - 12.jQuery */
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.wrap {
+  margin-top: 30px;
+}
+
+.wrap .menuList {
+  position: relative;
+  float: left;
+  padding-right: 30px;
+  border-right: 1px solid #fff;
+}
+
+.wrap .info {
+  float: left;
+  padding-left: 30px;
+}
+
+.wrap .info strong {
+  display: block;
+  margin-top: 10px;
+}
+
+.color {
+  background-color: #fff;
+  color: #000;
+}
