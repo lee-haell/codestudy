@@ -4,31 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <title>Menu_test</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-    <ul class="first">
-        <li class="foo"> list item 1 </li>
-        <li> list item 2 </li>
-        <li class="bar"> list item 3 </li>
-    </ul>
-    <ul class="second">
-        <li class="foo"> list item 1 </li>
-        <li> list item 2 </li>
-        <li class="bar"> list item 3 </li>
-    </ul>
+<body id="target color">
+    <div class="page-main">
+        <!-- <aside>
+            <ul class="first">
+                <li class="foo"> list item 1 </li>
+                <li> list item 2 </li>
+                <li class="bar"> list item 3 </li>
+            </ul>
+        </aside> -->
+
+        <div class="wrap">
+            <div class="contentWrap">
+                <div class="content clear">
+                    <div class="menuList">
+                        <ul>
+                            <li><a href="#">html</a></li>
+                            <li><a href="#">css</a></li>
+                            <li><a href="#">javascript</a></li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <input type="button" value="black" class="mode" onclick="changeMode('block')">
+                        <input type="button" value="white" class="mode" onclick="changeMode('white')">
+                        <strong>CSS</strong>
+                        <p>CSS는 CasCading StyleSheet의 약자입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script defer src="/lib/jquery-1.11.1.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <script type="text/javascript">
-        $(function(){
 
 
-            $('ul.first').find('.foo').css('background-color', 'purple').end().find('.bar').css('background-color', 'pink');
+            // $('ul.first').find('.foo').css('background-color', 'purple').end().find('.bar').css('background-color', 'pink');
             // jQuery - chain 개념
+
+            
+            function changeMode(color){
+                $('#target').addClass(color);
+            }
+            
+            
+            
+
         
-        });
     </script>
 </body>
 </html>
