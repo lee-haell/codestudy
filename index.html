@@ -1,52 +1,51 @@
-<!DOCTYPE html>
-<html lang="ko">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>edwith_자바스크립트의 시작</title>
-    <link rel="stylesheet" href="style.css">
+  <title>WEB1 - Welcome</title>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="colors.js"></script>
+  <script src="fetch/fetch.js"></script>
 </head>
 <body>
-    <h1><a href="index.html">WEB</a></h1>
+  <h1><a href="#!welcome">WEB</a></h1>
+  <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
+  <ol id="nav">
 
-    <input type="button" value="Day" onclick="
-        let target = document.querySelector('body');
+  </ol>
+  <article>
 
-        if(this.value === 'Day'){
-            target.style.backgroundColor = '#000';
-            target.style.color = '#fff';
-            this.value = 'Night';
-
-            let aLink = document.querySelectorAll('a');
-            let i = 0;
-            while(i < aLink.length){
-                aLink[i].style.color = 'pink';
-                i = i + 1;
-            }
-        } else {
-            target.style.backgroundColor = '#fff';
-            target.style.color = '#000';
-            this.value = 'Day';
-
-            let aLink = document.querySelectorAll('a');
-            let i = 0;
-            while(i < aLink.length){
-                aLink[i].style.color = 'purple';
-                i = i + 1;
-            }
-        }
-    ">
-    <hr>
-    <ol>
-        <li><a href="#">HTML</a></li>
-        <li><a href="#">CSS</a></li>
-        <li><a href="#">JavaScript</a></li>
-    </ol>
-    <hr>
-
-    <h2>JavaScript</h2>
-    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Tenetur repudiandae saepe non, unde suscipit ratione quis quae in tempora<br>itaque ex consequuntur assumenda provident.<br>Dolorum voluptatem facere facilis enim nesciunt.</span>
-    <hr>
-    <!-- <script src="main.js"></script> -->
+  </article>
+  <script>
+  function fetchPage(name){
+    fetch(name).then(function(response){
+      response.text().then(function(text){
+        document.querySelector('article').innerHTML = text;
+      })
+    });
+  }
+  if(location.hash){
+    fetchPage(location.hash.substr(2));
+  } else {
+    fetchPage('welcome');
+  }
+  fetch('list').then(function(response){
+    response.text().then(function(text){
+      var items = text.split(',');
+      var i = 0;
+      var tags = '';
+      while(i<items.length){
+        var item = items[i];
+        item = item.trim();
+        var tag = '<li><a href="#!'+item+'" onclick="fetchPage(\''+item+'\')">'+item+'</a></li>';
+        tags = tags + tag;
+        i = i + 1;
+      }
+      document.querySelector('#nav').innerHTML = tags;
+    })
+  });
+  </script>
 </body>
 </html>
