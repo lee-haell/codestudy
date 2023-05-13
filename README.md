@@ -3,7 +3,7 @@
 ### 공부 과정
 
 - inflearn
-- edwith(online_study)
+- edwith
 - opentutorials
 - tistory
 
