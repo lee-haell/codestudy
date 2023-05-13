@@ -1,4 +1,4 @@
-# Code_Study
+# study_coding
 
 ### 공부 과정
 
