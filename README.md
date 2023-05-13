@@ -1,5 +1,7 @@
 # study_edwith
 
+## edwith에서 공부한 내용을 기록합니다.
+
 - event page publishing
 - web UI class
 
