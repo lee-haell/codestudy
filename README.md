@@ -1,10 +1,11 @@
 # study_edwith
 
-## edwith에서 공부한 내용을 기록합니다.
+### edwith에서 공부한 내용을 기록합니다.
 
 <strong>02</strong>
-> <a href="https://www.boostcourse.org/web201/joinLectures/193141" target="_blank">웹 접근성 이해 / 이선주</a>
-<del>1. 웹 접근성의 이해</del>
+> <a href="https://www.boostcourse.org/web201/joinLectures/193141" target="_blank">웹 접근성 이해 / 이선주</a><br>
+<del>1. 웹 접근성의 이해</del><br>
+<del>2. 웹 접근성 지침</del><br>
 
 **장애환경은 신체장애 + 정보를 얻지 못하도록 방해하는 것 또한 포함
 (ex: 운전 중 / 노안 / 심한 소음 등등)
@@ -21,10 +22,10 @@
 <br><br>
 
 <strong>01</strong>
-> <a href="https://www.boostcourse.org/web344/joinLectures/20901" target="_blank">웹 UI 개발 / 조영광</a>
-<del>1. HTML, CSS 기초</del>
-<del>2. 웹 접근성의 이해</del>
-<del>3. HTML, CSS 활용</del>
+> <a href="https://www.boostcourse.org/web344/joinLectures/20901" target="_blank">웹 UI 개발 / 조영광</a><br>
+<del>1. HTML, CSS 기초</del><br>
+<del>2. 웹 접근성의 이해</del><br>
+<del>3. HTML, CSS 활용</del><br>
 
 
 <!-- ![ezgif com-gif-maker](https://user-images.githubusercontent.com/64449865/113470663-4b09c680-9492-11eb-9e91-035a9de3bc96.gif) -->
